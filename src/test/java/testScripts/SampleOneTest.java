@@ -77,6 +77,7 @@ public class SampleOneTest {
 		WebElement srcBox = driver.findElement(By.id("APjFqb"));
 		srcBox.sendKeys("Selenium Tutorial");
 		srcBox.submit();
+		System.out.println("Page Title ...."+driver.getTitle());
 		Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search");
 	}
 	
