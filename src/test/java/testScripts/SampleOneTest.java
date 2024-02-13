@@ -67,9 +67,15 @@ public class SampleOneTest {
 		WebElement srcBox = driver.findElement(By.id("APjFqb"));
 		srcBox.sendKeys("Java Tutorial");
 		srcBox.submit();
+
 //		softAssert.assertEquals(driver.getTitle(), "Java Tutorial - Google Search");
 //		softAssert.assertAll();
 		Assert.assertEquals(driver.getTitle(), "Java Tutorial - Google Search");
+
+		System.out.println("Page Title ...."+driver.getTitle());
+		softAssert.assertEquals(driver.getTitle(), "Java Tutorial - Google Search");
+		softAssert.assertAll();
+
 	}
 	@Test
 	public void searchSeleniumTest() throws InterruptedException {
