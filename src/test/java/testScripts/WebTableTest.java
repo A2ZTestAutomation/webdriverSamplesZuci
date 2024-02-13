@@ -27,5 +27,10 @@ public class WebTableTest {
 				+ "//td[contains(text(), 'Wagner')]//following-sibling::td[5]")).getText();
 		
 		System.out.println(strSalary);
+		
+		String strLocation = driver.findElement(By.xpath("\n"
+				+ "//td[contains(text(), 'Wagner')]//following-sibling::td[2]")).getText();
+		
+		System.out.println("Location....." + strLocation);
   }
 }
