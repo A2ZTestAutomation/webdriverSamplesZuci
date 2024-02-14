@@ -53,6 +53,7 @@ public class GoogleSearchScenarios {
 		
 		GooglePage gPage = new GooglePage();
 		gPage.searchTxt("Java Tutorial");
+		
 		Assert.assertEquals(driver.getTitle(), "Cucumber Tutorial - Google Search");
 	}
 	
